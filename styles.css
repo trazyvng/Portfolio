@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, main, footer {
+    background-color: #23395d;
+    color: white;
+    padding: 20px;
+}
+
+/* Header: Espaciado entre elementos */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Footer centrado */
+footer {
+    text-align: center;
+    padding: 20px;
+}
