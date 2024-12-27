@@ -1,3 +1,4 @@
+/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +15,7 @@ header {
     padding: 10px 0;
 }
 
-nav{
+nav {
     padding: 10px;
     text-align: center;
 }
@@ -87,4 +88,117 @@ input::placeholder, textarea::placeholder {
 textarea {
     resize: none;
     height: 120px;
+}
+
+/* Estilo para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav-link {
+        display: block;
+        padding: 8px 10px;
+        margin: 5px 0;
+    }
+
+    main, footer {
+        padding: 10px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    input, textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* Estilo para pantallas medianas (tabletas) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    .nav-link {
+        padding: 10px 12px;
+        margin: 0 3px;
+    }
+
+    main, footer {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 15px;
+        padding: 6px;
+    }
+
+    input, textarea {
+        font-size: 15px;
+        padding: 11px;
+    }
+}
+
+/* Estilo para pantallas grandes (computadoras de escritorio) */
+@media (min-width: 1025px) {
+    body {
+        font-size: 18px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-link {
+        padding: 12px 18px;
+        margin: 0 8px;
+    }
+
+    main, footer {
+        padding: 30px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    input, textarea {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+h1, h2 {
+    font-size: 3rem; /* Ajusta según el tamaño deseado */
+    font-weight: bold;
+    background: linear-gradient(to right, #4facfe, #00f2fe); /* Gradiente */
+    -webkit-background-clip: text; /* Hace que el gradiente afecte solo el texto */
+    -webkit-text-fill-color: transparent; /* Hace que el fondo del texto sea transparente */
+    margin-bottom: 20px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: white; /* Cambia el color según el fondo */
+    opacity: 1; /* Asegúrate de que el texto sea completamente opaco */
+    font-weight: bold; /* Opcional, para resaltar */
+}
+
+input, textarea {
+    color: white; /* Para el texto ingresado por el usuario */
 }
