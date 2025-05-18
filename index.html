@@ -4,65 +4,334 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Trazy NG | Web Dev</title>
-</head>
+    <title>Trazy NG | Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head> 
 <body>
-    <header>
-        <nav>
-            <!-- -->
-            <a href="#about" class="nav-link">About</a>
-            <a href="#skills" class="nav-link">Skills</a>
-            <a href="#My Projects" class="nav-link">My Projects</a>
-            <a href="#Contact me" class="nav-link">Contact me</a>
-        </nav>
+    <header id="header">
+        <div class="container">
+            <nav id="nav">
+                <a href="#about" class="nav-link">Sobre mí</a>
+                <a href="#skills" class="nav-link">Habilidades</a>
+                <a href="#projects" class="nav-link">Proyectos</a>
+                <a href="#contact" class="nav-link">Contacto</a>
+            </nav>
+            <div class="mobile-menu-btn" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
     </header>
+
     <main>
-        <div class="me">
-            <h1>Hello, I'm Trazy</h1>
-            <h3>Junior Front-End Developer, UX/UI enthusiast</h3>
-            <p>I'm a Systems Engineering student at Universidad Bicentenaria de Aragua, with a passion for front-end developing and learning UX/UI</p>
-            <p>Co-founder of VisionGest. A gesture-base interface control system that allows users to interact with their computers through gestures captured by camera</p> 
-        </div>
-        <div>
-            <a href="CV TRAZY NG.pdf" download="File1.pdf" style="text-decoration: none;">
-                <button>Download Resume</button>
-            </a>
-            <a href="#Contact me">
-                <button>Contact Me</button>
-            </a>
-        </div>
-        <div id="about" class="about">
-            <h2>About Me</h2>
-            <h3>Looking for an intern?</h3>
-            <p>While doing a job-scholarship, I've learnt how to manage myself in unknown areas such as working with exelearning and moodle</p>
-            <p>In addition to my studies and scholarship, I've self-taught myself by reading documentation and doing online courses</p>
-        </div>
-        <div id="skills" class="skills">
-            <h2>Skills</h2>
-            <p>As a front-end developer, I've learned the following tools and technologies</p>
-            <h3>Javascript, CSS</h3>
-            <p>Developing is a journey, as I've progressed on my development journey, I've also taken the opportunity to learn the basics of back-end development, like</p>
-            <h3>PHP, MYSQL, Java, C++</h3>
-        </div>
-        <div id="My Projects" class="My Projects">
-            <h2>My Projects</h2>
-        </div>
-        <div id="Contact me" class="Contact me">
-            <h2>Contact me</h2>
-            <!--Importante: recordar cambiar al codigo dado por formsubmit para que el correo no pueda ser visto en la pag web-->
-            <form action="https://formsubmit.co/trazyngmuniz04@gmail.com" method="POST">
-                <input type="text" name="name" required placeholder="Name">
-                <input type="email" name="email" required placeholder="Email">
-                <input type="text" name="subject" required placeholder="Subject">
-                <textarea name="msg" required placeholder="Message"></textarea>
-                <input type="hidden" name="_captcha" value="false">
-                <button type="submit">Submit</button>
-            </form>
-        </div>
+        <section class="hero" id="hero">
+            <div class="container hero-content">
+                <div class="hero-image">
+                    <img src="1000258437.jpg" alt="Foto de Trazy NG">
+                </div>
+                <div class="hero-text">
+                    <h1>Hola, soy Trazy NG</h1>
+                    <h3>Junior Front-End Developer & UX/UI Enthusiast</h3>
+                    <p>Estudiante de Ingeniería de Sistemas en la Universidad Bicentenaria de Aragua, con pasión por el desarrollo front-end y aprendizaje de UX/UI.</p>
+                    <p>Co-fundador de VisionGest. Un sistema de control de interfaz basado en gestos que permite a los usuarios interactuar con sus computadoras a través de gestos capturados por cámara.</p>
+                    <div class="btn-container">
+                        <a href="CV TRAZY NG.pdf" download="CV_TrazyNG.pdf" class="btn">
+                            <i class="fas fa-download"></i> Descargar CV
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fas fa-envelope"></i> Contáctame
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title">Sobre mí</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Mi experiencia beca-trabajo</h3>
+                        <p>Durante mi beca-trabajo, aprendí a manejarme en áreas desconocidas como trabajar con exelearning y moodle. Esto me ha permitido desarrollar habilidades de adaptación y aprendizaje rápido que puedo aplicar a cualquier proyecto.</p>
+                        <p>Además de mis estudios y beca, me considero autodidacta, leyendo documentación y realizando cursos en línea para mantenerme actualizada con las últimas tecnologías y tendencias del desarrollo web.</p>
+                        <p>Mi objetivo es crear experiencias digitales que no solo se vean bien, sino que también sean funcionales e intuitivas para los usuarios finales.</p>
+                        <h3>Pasantias en el cardiologico</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2 class="section-title">Habilidades</h2>
+                <p class="skills-intro">Como desarrollador front-end, he aprendido las siguientes herramientas y tecnologías:</p>
+                
+                <div class="skill-category">
+                    <h3>Desarrollo Front-end</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-html5 skill-icon"></i>
+                            <span class="skill-name">HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt skill-icon"></i>
+                            <span class="skill-name">CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js skill-icon"></i>
+                            <span class="skill-name">JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-bootstrap skill-icon"></i>
+                            <span class="skill-name">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Conocimientos de Back-end</h3>
+                    <p>En mi camino de desarrollo, también he aprovechado la oportunidad para aprender lo básico del desarrollo back-end:</p>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-php skill-icon"></i>
+                            <span class="skill-name">PHP</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database skill-icon"></i>
+                            <span class="skill-name">MySQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java skill-icon"></i>
+                            <span class="skill-name">Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code skill-icon"></i>
+                            <span class="skill-name">C++</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2 class="section-title">Mis Proyectos</h2>
+                <div class="projects-grid">
+                    <!-- Proyecto 1: VisionGest -->
+                    <div class="project-card">
+                        <img src="visiongest.png" alt="VisionGest Project" class="project-img">
+                        <div class="project-content">
+                            <h3>VisionGest</h3>
+                            <p>Sistema de control de interfaz basado en gestos que permite a los usuarios interactuar con sus computadoras mediante gestos capturados por cámara.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">OpenCV</span>
+                                <span class="project-tag">Machine Learning</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://vision-gest-website.vercel.app" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i> Pagina
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Proyecto 2: Portfolio -->
+                    <div class="project-card">
+                        <img src="portfolio.png" alt="Web Portfolio" class="project-img">
+                        <div class="project-content">
+                            <h3>Portafolio Web Personal</h3>
+                            <p>Diseño y desarrollo de mi portafolio web personal para mostrar mis proyectos y habilidades tanto de programación como de diseño.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML5</span>
+                                <span class="project-tag">CSS3</span>
+                                <span class="project-tag">JavaScript</span>
+                                <span class="project-tag">Responsive</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Proyecto 3: Placeholder para proyectos futuros -->
+                    <div class="project-card">
+                        <img src="/api/placeholder/400/320" alt="E-learning Platform" class="project-img">
+                        <div class="project-content">
+                            <h3>Plataforma E-learning</h3>
+                            <p>Contribución al desarrollo de módulos para plataformas de aprendizaje en línea utilizando Moodle y Exelearning.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Moodle</span>
+                                <span class="project-tag">Exelearning</span>
+                                <span class="project-tag">PHP</span>
+                                <span class="project-tag">LMS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-link"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="/api/placeholder/400/320" alt="E-learning Platform" class="project-img">
+                        <div class="project-content">
+                            <h3>Plataforma E-learning</h3>
+                            <p>Contribución al desarrollo de módulos para plataformas de aprendizaje en línea utilizando Moodle y Exelearning.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Moodle</span>
+                                <span class="project-tag">Exelearning</span>
+                                <span class="project-tag">PHP</span>
+                                <span class="project-tag">LMS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-link"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="/api/placeholder/400/320" alt="E-learning Platform" class="project-img">
+                        <div class="project-content">
+                            <h3>Plataforma E-learning</h3>
+                            <p>Contribución al desarrollo de módulos para plataformas de aprendizaje en línea utilizando Moodle y Exelearning.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Moodle</span>
+                                <span class="project-tag">Exelearning</span>
+                                <span class="project-tag">PHP</span>
+                                <span class="project-tag">LMS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-link"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="/api/placeholder/400/320" alt="E-learning Platform" class="project-img">
+                        <div class="project-content">
+                            <h3>Plataforma E-learning</h3>
+                            <p>Contribución al desarrollo de módulos para plataformas de aprendizaje en línea utilizando Moodle y Exelearning.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Moodle</span>
+                                <span class="project-tag">Exelearning</span>
+                                <span class="project-tag">PHP</span>
+                                <span class="project-tag">LMS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-link"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title">Contáctame</h2>
+                <div class="contact-form">
+                    <form action="https://formsubmit.co/trazyngmuniz04@gmail.com" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" class="form-control" placeholder="Asunto" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="msg" class="form-control" placeholder="Mensaje" required></textarea>
+                        </div>
+                        <input type="hidden" name="_captcha" value="false">
+                        <button type="submit" class="btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer>
-        <p>© Trazy NG 2025</p>
-        <p>Venezuela</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="https://ve.linkedin.com/in/trazy-ng-3a495b344" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+                      <a href="https://github.com/trazyvng" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                      </a>
+                </div>
+                <div class="copyright">
+                    <p>&copy; Trazy NG 2025 | Venezuela</p>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script>
+        // JavaScript para la funcionalidad del sitio
+        document.addEventListener('DOMContentLoaded', function() {
+            // Menú móvil
+            const mobileMenuBtn = document.getElementById('mobile-menu');
+            const nav = document.getElementById('nav');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                nav.classList.toggle('active');
+                
+                // Cambiar el ícono del menú
+                const icon = mobileMenuBtn.querySelector('i');
+                if (nav.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+            
+            // Cerrar el menú móvil al hacer clic en un enlace
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    if (nav.classList.contains('active')) {
+                        nav.classList.remove('active');
+                        const icon = mobileMenuBtn.querySelector('i');
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                });
+            });
+            
+            // Efecto de scroll en el header
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 100) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+            
+            // Scroll suave para los enlaces de navegación
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 70,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
